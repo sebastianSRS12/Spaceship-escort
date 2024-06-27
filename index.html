@@ -3,7 +3,7 @@
 
 
 
-<head>
+<title>
 <meta charset="utf-8"/>
 <META HTTP-EQUIV="Content-Type" CONTENT="text/html;charset=UTF-8"> 
 <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
@@ -45,12 +45,16 @@
 				<br>
 				<input id="vol" type="range" min="0" max="1" step="0.01" value="0.5" oninput="zzfxV=this.value;" onchange="zzfxV=this.value;">
 				<br><br><br><br>
-				<div onclick="localStorage.setItem('SpaceEscort13kbGame2', 1+' '+help);location.reload();"
+				<div class="OnekeyPress">
+				
+				</div> onclick="localStorage.setItem('SpaceEscort13kbGame2', 1+' '+help);location.reload();"
 					style="display:inline-block; color:orange; padding:15px; width:150px; text-align:center; border-radius:10px; background-color:rgba(255,255,255,0.2);">
 					Reset game to wave 1
 				</div>	
 				<br><br><br><br>
-				<div onclick="document.getElementById('config').style.display='none';"
+				<div class="OneKey">
+
+				</div> onclick="document.getElementById('config').style.display='none';"
 					style="display:inline-block; color:lime; padding:15px; width:50px; text-align:center; border-radius:10px; background-color:black">
 					OK
 				</div>	
@@ -83,7 +87,9 @@
 				
 				
 				
-				<div onclick="document.getElementById('helpD').style.display='none';"
+				<div class="Onekey">
+
+				</div> onclick="document.getElementById('helpD').style.display='none';"
 					style="position:absolute; left:35%; top:-80px; color:lime; padding:15px; width:100px; text-align:center; border-radius:10px; background-color:#333">
 					Ok, close help
 				</div>	
@@ -91,7 +97,9 @@
 			</div>
 			
 			<DIV  id="canvasDIV" style="position:relative; height:100%; overflow:hidden; background-color:black;">
-				<canvas id="mycanvas" 
+				<canvas id="mycanvas"  class="OneKey">
+
+				</canvas>
 						onclick="ponerNave(((event.layerX))/CanvasSize , ((event.layerY))/CanvasSize, 0);" 			
 						onmousedown="mou=1;" 				
 						onmouseup="mou=0;">
@@ -112,15 +120,17 @@
 					</div>
 				</div>
 				
-				<div id="helpb" class="" onclick="document.getElementById('helpD').style.display='block'; this.classList.remove('blink_me2'); this.style.boxShadow='0px 0px 5px 3px #044'; if(!help) localStorage.setItem('SpaceEscort13kbGame2', wave+' '+1);" style="position:absolute; top:5px; right:3%; color:silver; padding:0px 5px 0px 5px; text-align:center; box-shadow: 0px 0px 5px 3px #bf0; font-weight:900; font-size:12px; border-radius:50px; background-color:black;">	
+				<div id="helpb" class="OnekeyPress"></div> onclick="document.getElementById('helpD').style.display='block'; this.classList.remove('blink_me2'); this.style.boxShadow='0px 0px 5px 3px #044'; if(!help) localStorage.setItem('SpaceEscort13kbGame2', wave+' '+1);" style="position:absolute; top:5px; right:3%; color:silver; padding:0px 5px 0px 5px; text-align:center; box-shadow: 0px 0px 5px 3px #bf0; font-weight:900; font-size:12px; border-radius:50px; background-color:black;">	
 					?
 				</div>
 				
-				<div onclick="if(game_running){game_running=false;this.style.backgroundColor='orange';}else{game_running=true;this.style.backgroundColor='black';}" style="position:absolute; top:5px; right:10%; color:silver; padding:3px 5px 4px 3px; text-align:center; box-shadow: 0px 0px 5px 3px #044; font-weight:900; font-size:7px; border-radius:50px; background-color:black;">	
+				<div class="OneKey">
+
+				</div> onclick="if(game_running){game_running=false;this.style.backgroundColor='orange';}else{game_running=true;this.style.backgroundColor='black';}" style="position:absolute; top:5px; right:10%; color:silver; padding:3px 5px 4px 3px; text-align:center; box-shadow: 0px 0px 5px 3px #044; font-weight:900; font-size:7px; border-radius:50px; background-color:black;">	
 					&#9616;&#9616;
 				</div>
 				
-				<div onclick="document.getElementById('config').style.display='block';" style="position:absolute; top:5px; right:18%; color:silver; padding:0px 4px 1px 3px; text-align:center; box-shadow: 0px 0px 5px 3px #044; font-weight:900; font-size:13px; border-radius:50px; background-color:black;">	
+				<div class="Onekey"></div> onclick="document.getElementById('config').style.display='block';" style="position:absolute; top:5px; right:18%; color:silver; padding:0px 4px 1px 3px; text-align:center; box-shadow: 0px 0px 5px 3px #044; font-weight:900; font-size:13px; border-radius:50px; background-color:black;">	
 					&#x2699;
 				</div>
 				
@@ -192,7 +202,7 @@
 
 </body>
 
-  <head>
+  <title>
     <meta charset="utf-8" />
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
     <meta
@@ -470,7 +480,7 @@
 						style="cursor: pointer;"
 					/>
 					<br /><br /><br /><br />
-					<div
+					<div class="OnekeyPress"></div>
 						onclick="localStorage.setItem('SpaceEscort13kbGame2', 1+' '+help);location.reload();"
 						style="
 							display: inline-block;
@@ -486,7 +496,9 @@
 						Reset game to wave 1
 					</div>
 					<br /><br /><br /><br />
-					<div
+					<div class="OneKeyPress">
+
+					</div>
 						onclick="document.getElementById('config').style.display='none';if(!game_running){game_running=true;pause.style.backgroundColor='black';pause.style.color='silver';pause.innerHTML='&#9616;&#9616;';}"
 						style="
 							display: inline-block;
@@ -504,9 +516,11 @@
 					<br /><br />
 				</div>
 
-				<div  id="home-button" class="HB"
+				<div  id="home-button" class="HB" class="OnkeyUp">
+
+				</div>
 				onclick="localStorage.setItem('SpaceEscort13kbGame2', 1+' '+help);location.reload();">
-						<img style="height: 20px;" src="img/home-button-svgrepo-com.svg">
+						<img style="height: 20px;" src="img/home-button-svgrepo-com.svg" alt="">
 						<div class="tooltip">
 							Home
 						</div>
@@ -556,7 +570,9 @@
 						</div>
 					</div>
 
-					<div
+					<div class="OneKeyPress">
+
+					</div>
 						onclick="document.getElementById('helpD').style.display='none';if(!game_running){game_running=true;pause.style.backgroundColor='black';pause.style.color='silver';pause.innerHTML='&#9616;&#9616;';}"
 						style="
 							position: absolute;
@@ -585,7 +601,7 @@
 						background-color: black;
 					"
 				>
-					<canvas
+					<canvas class="canvas"></canvas>
 						id="mycanvas"
 						onclick="ponerNave(((event.layerX))/CanvasSize , ((event.layerY))/CanvasSize, 0);"
 						onmousedown="mou=1;"
@@ -663,7 +679,9 @@
 						></div>
 					</div>
 
-					<div
+					<div class="OnekeyPress">
+					
+					</div>
 						id="helpb"
 						class=""
 						onclick="document.getElementById('helpD').style.display='block'; this.classList.remove('blink_me2'); this.style.boxShadow='0px 0px 5px 3px #044'; if(!help) localStorage.setItem('SpaceEscort13kbGame2', wave+' '+1);if(game_running){game_running=false;pause.style.backgroundColor='orange';pause.style.color='black';pause.style.paddingLeft = '5px';pause.innerHTML='&#9654;';}"
@@ -689,7 +707,9 @@
 						?
 					</div>
 					<!-- The below div changes include the Pause button padding to appear it as the original shape -->
-					<div
+					<div class="OnekeyDown">
+
+					</div>
 						onclick="if(game_running){game_running=false;this.style.backgroundColor='orange';this.style.color='black';this.style.paddingLeft = '5px';this.innerHTML='&#9654;';}else{game_running=true;this.style.backgroundColor='black';this.style.color='silver';this.style.paddingLeft = '2px';this.innerHTML='&#9616;&#9616;';}"
 						style="
 							position: absolute;
@@ -714,7 +734,9 @@
 						&#9616;&#9616;
 					</div>
 
-					<div
+					<div class="oneKeyPress" class="OnekeyDown" class="OneKeyup">
+
+					</div>
 						onclick="document.getElementById('config').style.display='block';if(game_running){game_running=false;pause.style.backgroundColor='orange';pause.style.color='black';pause.style.paddingLeft = '5px';pause.innerHTML='&#9654;';}"
 						style="
 							position: absolute;
@@ -761,7 +783,7 @@
 				</script>
 
 					<div
-						style="
+						style{
 							position: relative;
 							margin: 0 auto;
 							width: 35%;
@@ -773,9 +795,9 @@
 							height: 17px;
 							max-height: 17px;
 							color: #00b0b0;
-							background-color: rgba(0, 0, 0, 0.5);
-							cursor: pointer;/* add cursor to attractive*/
-						"
+							background-color: rgba(0, 0, 0, 0.5);}
+			
+						
 					>
 						<span
 							id="pasta"
@@ -842,7 +864,9 @@
 							<br />20
 						</div>
 						<div class="menuDivs">
-							<div
+							<div class="Ships">
+
+							</div>
 								class="menuShips"
 								style="background-position: 42.8% -5%;cursor: pointer"
 								onclick="AAtype=2; AAsubtipo=4; selectShipmenu(this);"
@@ -862,7 +886,9 @@
 							<br />40
 						</div>
 						<div class="menuDivs">
-							<div
+							<div class="OneKeyMenu">
+
+							</div>
 								class="menuShips"
 								style="background-position: 71.3% -2%;cursor: pointer"
 								onclick="AAtype=2; AAsubtipo=6; selectShipmenu(this);"
