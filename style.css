@@ -3,7 +3,7 @@
 
 html, body {
 	user-select: none;
-	-webkit-print-color-adjust: exact; 
+	-print-color-adjust: exact; 
 	height: 100%;
 	margin: 0;
 }
@@ -74,7 +74,7 @@ html, body {
 	background: linear-gradient(140deg, #27cfcc 33.5%, rgba(0, 0, 0, 0) 33%), linear-gradient(140deg, yellow 34%, #ff5454 34%);
 	background-size: 500%;
 	-webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
+    background-clip: text;
 }
 .knockout{
 	animation: Gradient 5s ease infinite;
@@ -83,17 +83,19 @@ html, body {
 }
 
 @-webkit-keyframes Gradient {
-	0% {background-position: 30% 50%}
-	50% {background-position: 25% 50%}
-	100% {background-position: 30% 50%}
-=======
+	0% { background-position: 30% 50%; }
+	50% { background-position: 25% 50%; }
+	100% { background-position: 30% 50%; }
+}
+
 html,
 body {
   user-select: none;
-  -webkit-print-color-adjust: exact; {
-  height: 100%; {}
-  margin: 0; {
+  -print-color-adjust: exact;  
+  height: 100%; 
+  margin: 0; 
 }
+
 
 .menuDivs {
   position: relative;
@@ -177,7 +179,7 @@ body {
     linear-gradient(140deg, yellow 34%, #ff5454 34%);
   background-size: 500%;
   -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
+  background-clip: text;
 }
 .knockout {
   animation: Gradient 5s ease infinite;
@@ -185,7 +187,7 @@ body {
   -moz-animation: Gradient 5s ease infinite;
 }
 
-@-webkit-keyframes Gradient {
+@keyframes Gradient {
   0% {
     background-position: 30% 50%;
   }
